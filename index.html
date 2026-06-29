@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+        .image-container {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* ADJUSTED TO THE LOWER RIGHT CORNER
+           - bottom: 40px pins it near the baseline of the window.
+           - right: 40px keeps it pinned to the right edge.
+        */
+        .contact-btn {
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+            padding: 25px 50px; 
+            background-color: #007BFF;
+            color: #ffffff;
+            font-size: 32px; 
+            font-weight: bold;
+            border: none;
+            border-radius: 12px; 
+            cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            text-decoration: none; /* Removes underline from the link wrapper */
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            z-index: 9999; /* Keeps it layered above all images while scrolling */
+        }
+        .contact-btn:hover {
+            background-color: #0056b3;
+        }
+        .contact-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="Home.png" alt="Home">
+    </div>
+
+    <div class="image-container">
+        <img src="About us.png" alt="About Us">
+    </div>
+
+    <div class="image-container">
+        <img src="Job Opportunities.png" alt="Job Opportunities">
+    </div>
+
+    <div class="image-container">
+        <img src="Testimonials.png" alt="Testimonials">
+    </div>
+
+    <a href="https://cmqzgf1rq008rdwek1v9skumb.zapier.app/page" target="_blank" class="contact-btn">Contact Us!</a>
+
+</body>
+</html>
